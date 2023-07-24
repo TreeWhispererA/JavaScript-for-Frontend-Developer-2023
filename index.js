@@ -4,8 +4,6 @@ let arr = [
   { id: 3, age: 22, name: 'Abbey' },
 ];
 
-let names = arr.forEach((el) => {
-  el.age += 10;
-});
-console.log(arr);
+let toYoung = arr.filter((el) => el.age <= 15);
+console.log(toYoung);
 // forEach is similiar with map but it doesn't return ARRAY
