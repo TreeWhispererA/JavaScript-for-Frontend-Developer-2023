@@ -1,6 +1,8 @@
-// Import stylesheets
-import './style.css';
+let arr = [
+  { id: 1, age: 12, name: 'Manu' },
+  { id: 2, age: 24, name: 'Quincy' },
+  { id: 3, age: 22, name: 'Abbey' },
+]
 
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+let names = arr.map(el => el.name);
+console.log(names)
