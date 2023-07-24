@@ -6,4 +6,3 @@ let arr = [
 
 let toYoung = arr.reduce((acc, currentObj) => acc + currentObj.age, 0);
 console.log(toYoung);
-// forEach is similiar with map but it doesn't return ARRAY
