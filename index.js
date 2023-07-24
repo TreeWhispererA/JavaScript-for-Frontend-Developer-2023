@@ -1,8 +1,12 @@
-let arr = [
-  { id: 1, age: 12, name: 'Manu' },
-  { id: 2, age: 24, name: 'Quincy' },
-  { id: 3, age: 22, name: 'Abbey' },
-];
+let data = [1, 2, 3, 4, 5];
 
-let toYoung = arr.reduce((acc, currentObj) => acc + currentObj.age, 0);
-console.log(toYoung);
+Array.prototype.myMap = function (cb) {
+  let arr = [];
+  for (let i = 0; i < this.length; i++) {
+    arr.push(cb(this[i], i, this));
+    console.log(this);
+  }
+  return arr;
+};
+
+console.log(data.myMap((el) => el * 2));
