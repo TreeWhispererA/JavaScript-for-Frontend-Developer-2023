@@ -1,12 +1,5 @@
-let data = [1, 2, 3, 4, 5];
-
-Array.prototype.myMap = function (cb) {
-  let arr = [];
-  for (let i = 0; i < this.length; i++) {
-    arr.push(cb(this[i], i, this));
-    console.log(this);
-  }
-  return arr;
-};
-
-console.log(data.myMap((el) => el * 2));
+const num1 = 1,
+  num2 = 10;
+for (let i = num1; i <= num2; i++) {
+  setTimeout(() => console.log(i), i * 1000);
+}
